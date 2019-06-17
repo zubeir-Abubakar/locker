@@ -33,7 +33,7 @@ def main():
               short_code = input().lower()
               if short_code == 'cp':
                       print("New Password")
-                      print("🤖"*10)
+                      print(" 🤖 "*10)
 
                       print(">>which social media account?<<")
                       self = input()
@@ -60,7 +60,7 @@ def main():
                         print('\n')
 
                     for password in display_passwords():
-                        print(f" First name = {password.first_name}\n \n Last name = {password.last_name}\n \n password = {password.password}")
+                        print(f"User_name = {password.Username} \n \n First name = {password.first_name}\n \n Last name = {password.last_name}\n \n password = {password.password}")
 
                         print('\n')
 
