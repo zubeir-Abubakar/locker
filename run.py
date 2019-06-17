@@ -79,7 +79,7 @@ def main():
                         print(">>You don't seem to have any password<<")
                         print('\n')
               else:
-                        print("I really didn't get that. Please use the short codes provided")
+                        print("I re ally didn't get that. Please use the short codes provided")
 
 if __name__ == '__main__':
         main()
