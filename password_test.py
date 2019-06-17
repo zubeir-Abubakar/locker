@@ -16,7 +16,7 @@ class TestPassword(unittest.TestCase):
         def test_init test case to see if the object is initialized correctly
         '''
         self.assertEqual(self.new_password.smedia,"instagram")
-        self.assertEqual(self.new_password.first_name,"zubeir")
+        self.assertEqual(se lf.new_password.first_name,"zubeir")
         self.assertEqual(self.new_password.last_name,"Abubakar")
         self.assertEqual(self.new_password.user_name,"Black-heart")
         self.assertEqual(self.new_password.password,"5250")
