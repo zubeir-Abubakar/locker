@@ -19,7 +19,7 @@ class TestPassword(unittest.TestCase):
         self.assertEqual(self.new_password.first_name,"zubeir")
         self.assertEqual(self.new_password.last_name,"Abubakar")
         self.assertEqual(self.new_password.user_name,"Black-heart")
-        self.assertEqual(self.new_password.pa ssword,"5250")
+        self.assertEqual(self.new_password.password,"5250")
 
     def tearDown(self):
         Password.password_list = []
@@ -35,7 +35,7 @@ class TestPassword(unittest.TestCase):
             self.assertEqual(len(Password.password_list),2)
 
     def test_delete_passwords(self):
-            self.new_password.save_password()
+            self.new_pass word.save_password()
             test_password = Password("facebook","Zubeir","Abubakar","Black-heart","5250") 
             test_password.save_password()
 
