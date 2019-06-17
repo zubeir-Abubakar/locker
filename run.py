@@ -28,7 +28,7 @@ def main():
 
        while True:
 
-              print( ">>use these short codes for better understanding : cp - create new password, dp -display passwords, ex - exit the password list<<")
+              print( ">>use these short codes for better understanding : cp - c   reate new password, dp -display passwords, ex - exit the password list<<")
 
               short_code = input().lower()
               if short_code == 'cp':
