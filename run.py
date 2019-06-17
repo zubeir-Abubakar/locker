@@ -72,11 +72,11 @@ def main():
         #       elif short_code == 'ex':
         #                 print("Bye .......")
         #                 break
-              elif short_code == 'e x':
+              elif short_code == 'ex':
                         print("Bye .......")
                         # break:
                         print('\n')
-                        print(">>You don't seem to have any password<<")
+                        print(">>You don't seem to have any password <<")
                         print('\n')
               else:
                         print("I re ally didn't get that. Please use the short codes provided")
