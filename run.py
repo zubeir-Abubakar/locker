@@ -72,7 +72,7 @@ def main():
         #       elif short_code == 'ex':
         #                 print("Bye .......")
         #                 break
-              elif short_code == 'ex':
+              elif short_code == 'e x':
                         print("Bye .......")
                         # break:
                         print('\n')
