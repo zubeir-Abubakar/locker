@@ -28,7 +28,7 @@ def main():
 
        while True:
 
-              print( ">>use these short codes for better understanding : cp - c  reate new password, dp -display passwords, ex - exit the password list<<")
+              print( ">>use these short codes for better understanding : cp - create new password, dp -display passwords, ex - exit the password list<<")
 
               short_code = input().lower()
               if short_code == 'cp':
@@ -60,7 +60,7 @@ def main():
                         print('\n')
 
                     for password in display_passwords():
-                        print(f" First name = {password.first_name}\n \n Last name = {password.last_name}\n \n password = {password.password}")
+                        print(f" First name = {password.first_name}\n \n Last name = {password.last_name}\n \n Username = {password.user_name} \n \n  password = {password.password}")
 
                         print('\n')
 
