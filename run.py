@@ -20,7 +20,7 @@ def display_passwords():
 
 
 def main():
-       print(">>Welcome to your password list. kindly is your name?<<")
+       print(">>Welcome to your password list. kindly enter your name?<<")
        user_name = input()
 
        print(f">>hello {user_name}. What would you like to start with?<<")
@@ -28,7 +28,7 @@ def main():
 
        while True:
 
-              print( ">>use these short codes for better understanding : cp - create new password, dp -display passwords, ex - exit the password list<<")
+              print( ">>use these short codes for better understanding : cp - create new password, dp -display passwords, ex - exit the password list , dc- delete password<<")
 
               short_code = input().lower()
               if short_code == 'cp':
@@ -53,6 +53,18 @@ def main():
                       print('\n')
                       print(f"New Password {first_name} {last_name} created")
                       print('\n')
+              elif short_code == 'dc':
+                      print("Are you sure you wanna delete your passwords?")
+                      print(">> yes    no <<")
+                      ('\n')
+                      delete_passwords = input()
+
+                      delete_passwords(save_password(create_password(self, first_name, last_name, user_name, password))
+
+                      print(f"Passwords {create_password} deleted")
+
+                      print('\n')
+                                      
 
               elif short_code == 'dp':
                     if display_passwords():
