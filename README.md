@@ -19,7 +19,9 @@ This program enables one to save all their credentails and passwords for all you
 |---------------|-------------------|-------------------------|
 |When you run the command               | Your name will be required                |  input name field apeared   |
 | input field accept input             |short codes with description apppear use `cp`           | input field various appear |
-| user enters hs information | paswword choices `gp` `ep`          | if generate the computer will decide for you if put you will put yours||Short codes appear `dp` |  input field   |  password username first name last name appear|      
+| user enters his information | paswword choices `gp` `ep`          | if generate the computer will decide for you if put you will put yours|
+|Short codes appear `dp` |  input field   |  password username first name last name appear|  
+|short codes appear `ex`  | input field for `ex` | the user will exit the project |   
 
 
 ## Specifications
