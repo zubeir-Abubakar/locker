@@ -9,6 +9,18 @@ This program enables one to save all their credentails and passwords for all you
 ## Setup/Installation Requirements
 * Ensure you have a web browser
 * Internet connection is required
+* Go to my giuthub account and clone the respository `./git clone`
+* In your terminal , run the comand `python3.6 run.py`
+* You will be told to enter your name to continue 
+* After entering short codes for guidance will appear and use the `cp` command to create your password
+
+## BDD
+|#User inputs   |       INPUT       |      OUTPUT             |
+|---------------|-------------------|-------------------------|
+|When you run the command               | Your name will be required                |  input name field apeared   |
+| input field accept input             |short codes with description apppear use `cp`           | input field various appear |
+| user enters hs information | paswword choices `gp` `ep`          | if generate the computer will decide for you if put you will put yours||Short codes appear `dp` |  input field   |  password username first name last name appear|      
+
 
 ## Specifications
 * The user can add up to 7 entries.

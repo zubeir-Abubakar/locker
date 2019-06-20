@@ -1,3 +1,4 @@
+import random 
 class Password:
 
     password_list = []
@@ -15,6 +16,12 @@ class Password:
 
     def delete_passwords(self):
             Password.password_list.remove(self)
+
+    @classmethod
+    def generate_password(cls):
+        chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456'
+        new_password = ''.join(random.sample(chars, 6))
+        return new_password
 
 
     @classmethod

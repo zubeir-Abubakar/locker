@@ -7,6 +7,11 @@ def create_password(self, first_name, last_name, user_name, password):
     return new_password
 
 
+def generate_password():
+     
+     password = Password.generate_password()
+     return password
+
 def save_password(password):
         password.save_password()
 
@@ -19,6 +24,8 @@ def display_passwords():
        return Password.display_passwords()
 
 
+
+
 def main():
        print(">>Welcome to your password list. kindly enter your name?<<")
        user_name = input()
@@ -28,7 +35,7 @@ def main():
 
        while True:
 
-              print( ">>use these short codes for better understanding : cp - create new password, dp -display passwords, ex - exit the password list , dc- delete password<<")
+              print( ">>use these short codes for better understanding :  cp - create new password, gp - generate password, dp -display passwords, ex - exit the password list , dc- delete password<<")
 
               short_code = input().lower()
               if short_code == 'cp':
@@ -45,26 +52,33 @@ def main():
 
                       print("Username")
                       user_name = input()
-
-                      print("Password")
-                      password = input()
-
+                      while True:
+                              print('\n')
+                              print('Use : \n gp >>Generate a password \n ep >> Input your own password')
+                              shorter_code = input().lower()
+                              if shorter_code == 'gp':
+                                      password = generate_password()
+                                      break
+                              elif shorter_code == 'ep':
+                                       print("Password")
+                                       password = input()
+                                       break
+                              else:
+                                      pass
+                     
                       save_password(create_password(self, first_name, last_name, user_name, password))
                       print('\n')
                       print(f"New Password {first_name} {last_name} created")
                       print('\n')
-              elif short_code == 'dc':
-                      print("Are you sure you wanna delete your passwords?")
-                      print(">> yes    no <<")
-                      ('\n')
-                      delete_passwords = input()
-
-                      delete_passwords(save_password(create_password(self, first_name, last_name, user_name, password))
-
-                      print(f"Passwords {create_password} deleted")
-
-                      print('\n')
-                                      
+        #       elif short_code == 'dc':
+        #               print("Are you sure you wanna delete your passwords?")
+        #               print(">> yes    no <<")
+        #               ('\n')
+        #               delete_passwords = input()
+        #               delete_passwords(save_password(create_password(self, first_name, last_name, user_name, password))
+        #               print('\n')
+        #               print(f"Passwords {create_password} deleted")
+        #               print('\n')                  
 
               elif short_code == 'dp':
                     if display_passwords():
@@ -91,7 +105,7 @@ def main():
                         print(">>You don't seem to have any password <<")
                         print('\n')
               else:
-                        print("I re ally didn't get that. Please use the short codes provided")
+                        print("I really didn't get that. Please use the short codes provided")
 
 if __name__ == '__main__':
         main()
