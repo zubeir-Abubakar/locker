@@ -9,8 +9,8 @@ This program enables one to save all their credentails and passwords for all you
 ## Setup/Installation Requirements
 * Ensure you have a web browser
 * Internet connection is required
-* Go to my giuthub account and clone the respository `./git clone`
-* In your terminal , run the comand `python3.6 run.py`
+* Go to my github account and clone the respository `./git clone`
+* In your terminal , run the command `python3.6 run.py`
 * You will be told to enter your name to continue 
 * After entering short codes for guidance will appear and use the `cp` command to create your password
 
